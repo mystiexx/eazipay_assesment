@@ -21,7 +21,14 @@ const MobileNav: React.FC<MobileNavProps> = ({ isOpen, onClose }) => {
   };
   return (
     <SideModal isOpen={isOpen} onClose={onClose}>
-      <Box w="100%" bg="#fff" boxShadow="4px 0px 25px 0px #AAAAAA14" h="100vh">
+      <Box
+        w="100%"
+        bg="#fff"
+        boxShadow="4px 0px 25px 0px #AAAAAA14"
+        h="100vh"
+        overflowY={"scroll"}
+        pb="100px"
+      >
         <Box className={styles.logo_container}>
           <Image src={logo} alt="eazipay logo" />
         </Box>
