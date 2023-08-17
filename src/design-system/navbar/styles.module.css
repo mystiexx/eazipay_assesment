@@ -19,12 +19,19 @@
   display: none;
 }
 
+.mobile {
+  display: none;
+}
+
 .path_name {
   display: none;
 }
 
 /* mobile screen  */
 @media (max-width: 640px) {
+  .mobile {
+    display: block;
+  }
   .profile {
     display: none;
   }

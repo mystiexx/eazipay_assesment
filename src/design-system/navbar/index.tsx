@@ -1,18 +1,27 @@
-import React from "react";
+import React, { useState } from "react";
 import { Box, Avatar, Text, Image } from "@chakra-ui/react";
 import logo from "../../assets/images/logo.png";
 import ArrowRight from "../../assets/icons/arrowRight";
 import Notification from "../../assets/icons/notification";
 import HeroMenu from "../../assets/icons/heroMenu";
 import styles from "./styles.module.css";
+import MobileNav from "../mobileNav";
 
 const Navbar: React.FC = () => {
   const pathname = window.location.pathname;
   const pathWithoutSlash = pathname.replace(/^\//, "");
+  const [show, setShow] = useState<boolean>(false);
   return (
     <Box className={styles.nav}>
+      <Box className={styles.mobile}>
+        <MobileNav isOpen={show} onClose={() => setShow(!show)} />
+      </Box>
       <Box display="flex" justifyContent={"space-between"} alignItems="center">
-        <Box className={styles.icon}>
+        <Box
+          className={styles.icon}
+          cursor="pointer"
+          onClick={() => setShow(!show)}
+        >
           <HeroMenu />
         </Box>
 

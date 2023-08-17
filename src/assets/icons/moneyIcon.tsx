@@ -1,10 +1,10 @@
-import * as React from "react"
+import * as React from "react";
 
 interface MoneyIconProps {
-    props?: any
+  props?: any;
 }
 
-const MoneyIcon:React.FC<MoneyIconProps> = (props) => (
+const MoneyIcon: React.FC<MoneyIconProps> = (props) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     width={23}
@@ -37,5 +37,5 @@ const MoneyIcon:React.FC<MoneyIconProps> = (props) => (
       </clipPath>
     </defs>
   </svg>
-)
-export default MoneyIcon
+);
+export default MoneyIcon;

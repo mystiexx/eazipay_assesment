@@ -9,9 +9,7 @@ import styles from "../styles.module.css";
 const Recent: React.FC<RecentProps> = ({ content }) => {
   return (
     <Box mt="48px" mb="100px">
-      <Text className={styles.header_activity}>
-        Recent Activities
-      </Text>
+      <Text className={styles.header_activity}>Recent Activities</Text>
 
       {/* search and filter */}
       <Box display="flex" gap="16px" alignItems={"center"}>
@@ -42,9 +40,7 @@ const Recent: React.FC<RecentProps> = ({ content }) => {
               fontWeight: "400",
             }}
           />
-          <Box
-          className={styles.search_box}
-          >
+          <Box className={styles.search_box}>
             <SearchIcon />
           </Box>
         </Box>

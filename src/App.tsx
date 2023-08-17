@@ -12,7 +12,7 @@ const App: React.FC = () => {
     <Router>
       <Routes>
         <Route element={<Dashboard />} path="/dashboard" />
-
+        <Route path="*" element={<Dashboard />} />
         <Route path="/" element={<Navigate to="/dashboard" replace />} />
       </Routes>
     </Router>

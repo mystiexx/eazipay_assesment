@@ -1,10 +1,10 @@
-import * as React from "react"
+import * as React from "react";
 
 interface LoanIconProps {
-    props?: any
+  props?: any;
 }
 
-const LoanIcon:React.FC<LoanIconProps> = (props) => (
+const LoanIcon: React.FC<LoanIconProps> = (props) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     width={19}
@@ -33,6 +33,5 @@ const LoanIcon:React.FC<LoanIconProps> = (props) => (
       </clipPath>
     </defs>
   </svg>
-)
-export default LoanIcon
-
+);
+export default LoanIcon;
