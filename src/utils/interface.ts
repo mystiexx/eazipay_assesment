@@ -4,6 +4,8 @@ export interface LayoutProps {
 
 export interface RecentProps {
   content?: any;
+  handleSearch: (search: string) => void;
+  search?: string;
 }
 
 export interface RecentCardProps {

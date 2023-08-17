@@ -6,7 +6,11 @@ import { RecentProps } from "../../../utils/interface";
 import RecentCard from "./card";
 import styles from "../styles.module.css";
 
-const Recent: React.FC<RecentProps> = ({ content }) => {
+const Recent: React.FC<RecentProps> = ({ content, handleSearch, search }) => {
+  const handleSearchInput = (event: React.ChangeEvent<HTMLInputElement>) => {
+    const searchValue = event.target.value;
+    handleSearch(searchValue);
+  };
   return (
     <Box mt="48px" mb="100px">
       <Text className={styles.header_activity}>Recent Activities</Text>
@@ -26,6 +30,8 @@ const Recent: React.FC<RecentProps> = ({ content }) => {
         >
           <Input
             type="text"
+            onChange={(e) => handleSearchInput(e)}
+            value={search}
             border="none"
             borderLeftRadius="16px"
             focusBorderColor="transparent"

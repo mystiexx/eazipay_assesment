@@ -7,8 +7,9 @@ import AddEmployeeIcon from "../assets/icons/addEmployeeIcon";
 import PayrollIcon from "../assets/icons/payrollIcon";
 import WalletIcon from "../assets/icons/walletIcon";
 import DashboardIcon from "../assets/icons/dashboardIcon";
+import { Act } from "./types";
 
-export const activities = [
+export const activities: Act[] = [
   {
     date: "Wednesday, November 09, 2022",
     activity: [
@@ -23,9 +24,9 @@ export const activities = [
       },
       {
         title: "employee management",
-        name: "Badmus Kemis",
-        first_name: "Badmus",
-        last_name: "Kemis",
+        name: "Kalu Abasiama",
+        first_name: "Kalu",
+        last_name: "Abasiama",
         activity: "Added new employee",
         employee: "04",
       },
