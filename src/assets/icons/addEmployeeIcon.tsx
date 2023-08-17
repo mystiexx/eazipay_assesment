@@ -2,9 +2,10 @@ import * as React from "react";
 
 interface AddEmployeeIconProps {
   props?: any;
+  color?: any;
 }
 
-const AddEmployeeIcon: React.FC<AddEmployeeIconProps> = (props) => (
+const AddEmployeeIcon: React.FC<AddEmployeeIconProps> = ({ color, props }) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     width={17}
@@ -13,7 +14,7 @@ const AddEmployeeIcon: React.FC<AddEmployeeIconProps> = (props) => (
     {...props}
   >
     <path
-      stroke="#EA4E4B"
+      stroke={color || "#EA4E4B"}
       strokeLinecap="round"
       strokeLinejoin="round"
       strokeWidth={1.471}

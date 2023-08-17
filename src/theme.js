@@ -5,7 +5,7 @@ export const Theme = extendTheme({
     global: () => ({
       body: {
         fontFamily: "Aeonik",
-        color: '#292A29',
+        color: "#292A29",
       },
     }),
   },

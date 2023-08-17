@@ -1,0 +1,42 @@
+.nav_content {
+  padding: 16px;
+  font-size: 16px;
+  font-weight: 500;
+  text-transform: capitalize;
+  border-bottom: 0.8px solid #e7e8e7;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  background-color: #fff;
+  color: #515251;
+  border-left: none;
+}
+
+.nav_content_active {
+  padding: 16px;
+  font-size: 16px;
+  font-weight: 500;
+  text-transform: capitalize;
+  border-bottom: 0.8px solid #e7e8e7;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  background-color: #f0f7eb80;
+  color: #11453b;
+  border-left: 4px solid #11453b;
+}
+
+.last_nav_content {
+  border-bottom: none;
+}
+
+.logo_container {
+  background-color: #11453b;
+  background-image: url("../../assets/images/eazi_frame.png");
+  background-size: cover;
+  padding: 59px;
+  display: grid;
+  place-items: center;
+}
